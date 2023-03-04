@@ -1,0 +1,52 @@
+extends layout
+block styles
+    link(rel="stylesheet", href="style/resumes.css")
+block body 
+    .container 
+        .row.my-3
+            .col 
+                .card
+                        .card-header.bg-d Resumes 
+                        .card-body.bg-l-d
+                            label(for="resume") Select a Resume:
+                            | 
+                            select(name='resume' id='resume')
+                                option
+                                
+
+                                
+
+
+        .row.my-3
+            
+
+            .col
+                .card
+                    .card-header.bg-d Candidate Info  
+                    .card-body.bg-l-d
+                        .row.m-3
+                            .col
+                                label.d-block(for="name") Name:
+                                input(type="text" name = 'name' readonly style = 'width: 100%;' id = 'name')
+                            .col 
+                                label.d-block(for="email") Email
+                                input(type="text" name = 'email' readonly style = 'width: 100%;' id = 'email') 
+                        .row.m-3
+                            .col 
+                                label.d-block(for='education') Education: 
+                                input(type="text" name='education' readonly style = 'width: 100%;' id = 'education')
+                        .row
+                            .col
+                                label(for="certificates") Certificates
+                                .list-view(style=" height: 100rem;" id = 'certificates')
+                            .col 
+                                label(for="skills") Hard Skills
+                                .list-view(style=" height: 100rem;" id = 'skills')
+    
+    script(src="js/app.js" type="module")
+        
+        
+        
+                        
+                        
+

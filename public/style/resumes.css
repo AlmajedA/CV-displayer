@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+  
+
+
+body{
+    background-image: url(/images/blurry-bg.svg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size:1.25em;
+
+}
+
+.bg-d{
+    background-color: #2a2438a3;
+    color: #100e15;
+}
+
+.bg-l-d{
+    background-color: #352f449f;
+    color: #100e15;
+}
+
+input, select{
+    background-color: #DBD8E3;
+    border: none;
+    color: #2a2438a3;
+}
+
+.card{
+    border: none;
+}
+
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: #DBD8E3;
+}
+  
+.list-item {
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #2a2438a3;
+    
+}
+
+.list-item:hover {
+    background-color: #c2bfcc;
+}
+
+.list-item.selected {
+    background-color: #007bff;
+    color: #fff;
+}

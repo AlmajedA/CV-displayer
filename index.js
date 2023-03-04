@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', async function (req, res) {
-	res.render('test', { title: 'test'})
+	res.render('home', { title: 'home'})
 })
 
 
