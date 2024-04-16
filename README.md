@@ -1,5 +1,8 @@
 # CV-displayer
 
+Install Dependences:
+
+`npm install` or `npm i`
 
 To run the GUI please type this command:
 
